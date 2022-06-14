@@ -1,4 +1,4 @@
-import icon_location from "../assets/images/icon-location.png";
+import icon_location from "../assets/image/icon-location.png";
 
 import { FaSearch, FaBell, FaCartPlus, FaMicrophone } from "react-icons/fa";
 

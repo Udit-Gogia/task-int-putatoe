@@ -1,12 +1,13 @@
 import Navbar from "./components/navbar";
 import Carousel from "./components/carousel";
+import Func from "./components/func";
 
 function App() {
 	return (
-		<div className="App">
+		<div className="App overflow-x-hidden">
 			<Navbar />
 			<Carousel />
-			<h1 className="text-3xl font-bold underline">PUTATOE</h1>
+			<Func />
 		</div>
 	);
 }
