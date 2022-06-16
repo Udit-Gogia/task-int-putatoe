@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from "../assets/image/carouselimg1.png";
-import img2 from "../assets/image/carouselimg2.png";
-import img3 from "../assets/image/carouselimg3.png";
-import img4 from "../assets/image/carouselimg4.png";
+import img1 from "../assets/image/carouselimg1.webp";
+import img2 from "../assets/image/carouselimg2.webp";
+import img3 from "../assets/image/carouselimg3.webp";
+import img4 from "../assets/image/carouselimg4.webp";
 
 export default function carousel() {
 	var settings = {
@@ -18,19 +18,23 @@ export default function carousel() {
 		autoplaySpeed: 2000,
 	};
 	return (
-		<div>
+		<div className="sm:h-[10rem] xl:h-full">
 			<Slider {...settings}>
-				<div>
-					<img src={img1} className="w-screen" alt="img1" />
+				<div className="sm:h-[10rem] xl:h-full">
+					<img
+						src={img1}
+						className="w-screen sm:h-[10rem] xl:h-full"
+						alt="img1"
+					/>
 				</div>
-				<div>
-					<img src={img2} className="w-screen" alt="img2" />
+				<div className="sm:h-32 xl:h-full">
+					<img src={img2} className="w-screen sm:h-32  xl:h-full" alt="img2" />
 				</div>
-				<div>
-					<img src={img3} className="w-screen" alt="img3" />
+				<div className="sm:h-32 xl:h-full">
+					<img src={img3} className="w-screen sm:h-32  xl:h-full" alt="img3" />
 				</div>
-				<div>
-					<img src={img4} className="w-screen" alt="img4" />
+				<div className="sm:h-32 xl:h-full">
+					<img src={img4} className="w-screen sm:h-32  xl:h-full" alt="img4" />
 				</div>
 			</Slider>
 		</div>

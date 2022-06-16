@@ -3,6 +3,8 @@ import Carousel from "./components/carousel";
 import Func from "./components/func";
 import Poprod from "./components/poprod";
 import Services from "./components/services";
+import Section from "./components/section";
+import Footer from "./components/footer";
 
 function App() {
 	return (
@@ -10,8 +12,10 @@ function App() {
 			<Navbar />
 			<Carousel />
 			<Func />
+			<Section />
 			<Poprod />
 			<Services />
+			<Footer />
 		</div>
 	);
 }

@@ -26,4 +26,54 @@
 		0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 	transform: scale(1.025);
 }
+
+@media (max-width: 540px) {
+	.car-product {
+		width: 13rem !important;
+		height: 14rem !important;
+	}
+	.car-product-img {
+		width: 7rem !important;
+	}
+	.car-product-title {
+		font-size: 1rem !important;
+	}
+}
+@media (min-width: 541px) and (max-width: 770px) {
+	.car-product {
+		width: 11rem !important;
+		height: 17rem !important;
+	}
+	.car-product-img {
+		width: 7rem !important;
+	}
+	.car-product-title {
+		font-size: 1.1rem !important;
+	}
+}
+@media (min-width: 780px) and (max-width: 1070px) {
+	.car-product {
+		width: 12rem !important;
+		height: 15rem !important;
+	}
+	.car-product-title {
+		font-size: 1.2rem !important;
+	}
+	.car-product-img {
+		width: 8rem !important;
+	}
+}
+@media (min-width: 1200px) {
+	.car-product-img {
+		width: 10rem !important;
+	}
+	.car-product {
+		width: 15rem !important;
+		height: 19rem !important;
+	}
+	.car-product-title {
+		font-size: 1.4rem !important;
+	}
+}
+
 @tailwind utilities;

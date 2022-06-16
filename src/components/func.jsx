@@ -8,9 +8,12 @@ function createfunction(img) {
 
 export default function func() {
 	return (
-		<div className="flex w-screen  flex-wrap bg-[#00838f0f] -mt-2 flex-col items-center ">
-			<div className="flex">{imgs.slice(0, 4).map(createfunction)}</div>
-			<div className="flex">{imgs.slice(4).map(createfunction)}</div>
+		<div className="grid grid-cols-4 w-screen  flex-wrap bg-[#00838f0f] -mt-2  items-center ">
+			<div className="w-screen ">
+				<div className="items-center m-2 grid xl:grid-cols-4 justify-center  sm:grid-cols-2 lg:grid-cols-3">
+					{imgs.map(createfunction)}
+				</div>
+			</div>
 		</div>
 	);
 }

@@ -13,6 +13,50 @@ export default function poprod() {
 		autoplay: true,
 		autoplaySpeed: 4000,
 		slidesToShow: 5,
+		responsive: [
+			{
+				breakpoint: 410,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 880,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 4,
+				},
+			},
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 5,
+				},
+			},
+			{
+				breakpoint: 1536,
+				settings: {
+					slidesToShow: 5,
+				},
+			},
+		],
 	};
 	return (
 		<div className="bg-[#ddefef]">
@@ -23,9 +67,18 @@ export default function poprod() {
 			<div className="bg-[#00838F]">
 				<Slider {...settings} className="w-screen">
 					{items.map((item) => (
-						<div className="car-product">
-							<img src={item.src} alt={item.alt} className="car-product-img" />
-							<p className="p-2 text-2xl text-center mb-4">{item.title}</p>
+						<div
+							key={item.id}
+							className="car-product sm:h-56 sm:w-46 sm:p-4 xl:h-[18vw] xl:w-[18vw] sm:m-2 "
+						>
+							<img
+								src={item.src}
+								alt={item.title}
+								className="car-product-img"
+							/>
+							<p className="p-2 text-2xl text-center mb-4 sm:text-lg car-product-title">
+								{item.title}
+							</p>
 						</div>
 					))}
 				</Slider>
