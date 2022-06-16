@@ -1,5 +1,4 @@
 import icon_location from "../assets/image/icon-location.png";
-
 import { FaSearch, FaBell, FaCartPlus, FaMicrophone } from "react-icons/fa";
 
 export default function navbar() {
@@ -19,8 +18,12 @@ export default function navbar() {
 					placeholder="Search for Products and Brands"
 					className="rounded-md py-2 pl-4 min-w-[25vw] outline-none pr-8"
 				></input>
-				<FaSearch className="text-[#00838F] mr-2 text-xl" />
-				<FaMicrophone className="text-[#00838F] font-bold mr-3 text-xl" />
+				<button>
+					<FaSearch className="text-[#00838F] mr-2 text-xl" />
+				</button>
+				<button>
+					<FaMicrophone className="text-[#00838F] font-bold mr-3 text-xl" />
+				</button>
 			</div>
 			<div className="flex jusitfy-evenly px-4">
 				<button className="ml-4">

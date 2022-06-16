@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
+
+.car {
+	display: flex !important;
+	flex-direction: row;
+}
+.car-product {
+	margin: 30px;
+	background-color: white;
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	width: 18vw !important;
+	border-radius: 20px;
+	height: 17vw;
+}
+.car-product-img {
+	width: 12vw;
+	padding-top: 20px;
+}
 @tailwind utilities;
