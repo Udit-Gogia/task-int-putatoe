@@ -3,15 +3,15 @@ import { FaSearch, FaBell, FaCartPlus, FaMicrophone } from "react-icons/fa";
 
 export default function navbar() {
 	return (
-		<div className="bg-[#00838F] p-3 flex items-center justify-center w-screen relative  sm:flex-col xl:flex-row">
-			<div className="flex ">
-				<h1 className="font-bold text-white text-2xl xl:absolute left-20 tracking-wide">
+		<div className="bg-[rgb(0,131,143)] p-3 flex items-center justify-center w-screen relative navbar xl:flex-row">
+			<div className="flex seg-1">
+				<h1 className="font-bold text-white text-2xl xl:absolute left-20 tracking-wide sm-absolute sm:top-2 xl:top-0 heading">
 					PUTATOE
 				</h1>
 				<img
 					src={icon_location}
 					alt="icon-location"
-					className="w-8 h-8 xl:mr-8 sm:mx-2"
+					className="w-8 h-8 xl:mr-8 sm:mx-2 loc-icon"
 				></img>
 				<div className="flex bg-white items-center rounded-md">
 					<input
@@ -27,7 +27,7 @@ export default function navbar() {
 					</button>
 				</div>
 			</div>
-			<div className="flex  sm:mt-4 xl:mt-0">
+			<div className="flex  sm:mt-4 xl:mt-0 seg-2">
 				<div className="flex jusitfy-evenly px-4">
 					<button className="ml-4" name="Bell">
 						<FaBell className="text-white font-bold text-xl " />

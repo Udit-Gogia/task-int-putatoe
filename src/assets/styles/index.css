@@ -29,14 +29,48 @@
 
 @media (max-width: 540px) {
 	.car-product {
-		width: 13rem !important;
-		height: 14rem !important;
+		width: 11rem !important;
+		height: 14.4rem !important;
 	}
 	.car-product-img {
 		width: 7rem !important;
 	}
 	.car-product-title {
 		font-size: 1rem !important;
+	}
+	.navbar {
+		flex-direction: column !important;
+	}
+	.seg1 {
+		justify-content: space-between !important;
+	}
+	.seg-2 {
+		margin-top: 1rem !important;
+	}
+	.heading {
+		font-size: 0rem !important;
+	}
+	.loc-icon {
+		width: 2rem !important;
+		height: 2rem !important;
+		margin-right: 1rem !important;
+	}
+	.car-div,
+	.car,
+	.car-img {
+		height: 5rem !important;
+	}
+	.func {
+		width: 10rem !important;
+	}
+	.func-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+	.footer-1 {
+		padding: 2rem !important;
+	}
+	.foot-icon {
+		margin-left: 0.5rem !important;
 	}
 }
 @media (min-width: 541px) and (max-width: 770px) {

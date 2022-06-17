@@ -18,23 +18,35 @@ export default function carousel() {
 		autoplaySpeed: 2000,
 	};
 	return (
-		<div className="sm:h-[10rem] xl:h-full">
-			<Slider {...settings}>
+		<div className="sm:h-[10rem] xl:h-full car-div">
+			<Slider {...settings} className="car">
 				<div className="sm:h-[10rem] xl:h-full">
 					<img
 						src={img1}
-						className="w-screen sm:h-[10rem] xl:h-full"
+						className="w-screen sm:h-[10rem] xl:h-full car-img"
 						alt="img1"
 					/>
 				</div>
 				<div className="sm:h-32 xl:h-full">
-					<img src={img2} className="w-screen sm:h-32  xl:h-full" alt="img2" />
+					<img
+						src={img2}
+						className="w-screen sm:h-32  xl:h-full car-img"
+						alt="img2"
+					/>
 				</div>
 				<div className="sm:h-32 xl:h-full">
-					<img src={img3} className="w-screen sm:h-32  xl:h-full" alt="img3" />
+					<img
+						src={img3}
+						className="w-screen sm:h-32  xl:h-full car-img"
+						alt="img3"
+					/>
 				</div>
 				<div className="sm:h-32 xl:h-full">
-					<img src={img4} className="w-screen sm:h-32  xl:h-full" alt="img4" />
+					<img
+						src={img4}
+						className="w-screen sm:h-32  xl:h-full car-img"
+						alt="img4"
+					/>
 				</div>
 			</Slider>
 		</div>
