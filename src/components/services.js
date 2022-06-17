@@ -8,30 +8,27 @@ export default function poprod() {
 				Services We Provide
 			</h1>
 
-			<div className="flex flex-wrap justify-center ">
+			<div className="grid lg:grid-cols-3 md:grid-cols-2 justify-center sm:grid-cols-1 sm:grid-flow-row">
 				{service.map((item) => (
 					<div
 						key={item.id}
-						className="flex bg-white border-2 rounded-xl shadow-sm w-[32%] items-center m-2 card"
+						className="flex sm:flex-col bg-white border-2 rounded-xl xl:flex-row shadow-sm  items-center m-2 card  sm:grid-cols-2 sm:justify-center"
 					>
-						<div className="p-6 w-1/2 flex flex-col items-center">
-							<h2 className="text-center w-44 ml-0 font-bold text-lg ">
+						<div className="p-6  flex flex-col items-center">
+							<h2 className="text-center  ml-0 font-bold lg:text-lg md:text-md">
 								{item.name}
 							</h2>
-							<ul className="text-center mt-3">
+							<ol className="pl-4 mt-3 list-disc ">
 								{item.list.map((ele) => {
 									return <li>{ele}</li>;
 								})}
-							</ul>
+							</ol>
 						</div>
-						<div className="p-4">
+						<div className="p-4 ">
 							<img
 								src={item.src}
 								alt={item.name}
-								style={{
-									width: "15vw",
-									margin: " 0 2rem 0 0 ",
-								}}
+								className="lg:w-[15rem] md:w-[13rem] "
 							></img>
 						</div>
 					</div>
