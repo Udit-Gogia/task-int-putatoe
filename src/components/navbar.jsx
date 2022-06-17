@@ -13,7 +13,7 @@ export default function navbar() {
 					alt="icon-location"
 					className="w-8 h-8 xl:mr-8 sm:mx-2 loc-icon"
 				></img>
-				<div className="flex bg-white items-center rounded-md">
+				<div className="flex bg-white items-center rounded-md sm:mr-4">
 					<input
 						type="text"
 						placeholder="Search for Products and Brands"
