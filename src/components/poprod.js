@@ -15,7 +15,7 @@ export default function poprod() {
 		slidesToShow: 5,
 		responsive: [
 			{
-				breakpoint: 410,
+				breakpoint: 350,
 				settings: {
 					slidesToShow: 2,
 				},
